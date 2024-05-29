@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:background="?android:attr/selectableItemBackground"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    app:cardUseCompatPadding="true">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="@dimen/_148sdp"
+        android:layout_height="@dimen/_80sdp"
+        android:layout_margin="@dimen/_8sdp"
+        android:elevation="@dimen/_3sdp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="@dimen/_10sdp"
+        app:cardElevation="@dimen/_3sdp">
+
+        <RelativeLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textSize="@dimen/_15ssp"
+                android:textStyle="bold"
+                android:textColor="@color/text_blue"
+                android:gravity="center"
+                android:id="@+id/fontTV"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="ABCD"
+                android:maxLines="1"
+                android:layout_centerInParent="true" />
+
+            <ImageView
+                android:id="@+id/doneIV"
+                android:visibility="gone"
+                android:layout_width="@dimen/_16sdp"
+                android:layout_height="@dimen/_16sdp"
+                android:layout_margin="@dimen/_8sdp"
+                android:src="@drawable/done"
+                android:layout_alignParentRight="true" />
+
+            <RelativeLayout
+                android:gravity="center"
+                android:id="@+id/addLay"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:background="@drawable/blue_square_btn"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:alpha="0.3" />
+
+                <ImageView
+                    android:layout_width="@dimen/_20sdp"
+                    android:layout_height="@dimen/_20sdp"
+                    android:src="@drawable/kdownload"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+
+            <FrameLayout
+                android:paddingLeft="@dimen/_10sdp"
+                android:paddingRight="@dimen/_10sdp"
+                android:visibility="gone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:layout_marginBottom="@dimen/_10sdp">
+
+                <TextView
+                    android:textSize="@dimen/_12ssp"
+                    android:textColor="@android:color/white"
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:background="@drawable/buttonbg"
+                    android:visibility="gone"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:text="Installed"
+                    android:backgroundTint="@color/colorAccent" />
+
+                <LinearLayout
+                    android:gravity="center"
+                    android:layout_gravity="center"
+                    android:orientation="vertical"
+                    android:background="@drawable/buttonbg"
+                    android:visibility="visible"
+                    android:layout_width="@dimen/_100sdp"
+                    android:layout_height="@dimen/_40sdp"
+                    android:backgroundTint="@color/colorAccent">
+
+                    <RelativeLayout
+                        android:visibility="visible"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/_40sdp">
+
+                        <TextView
+                            android:textSize="@dimen/_12ssp"
+                            android:textStyle="bold"
+                            android:textColor="@android:color/white"
+                            android:gravity="center"
+                            android:paddingLeft="@dimen/_15sdp"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginRight="-10dp"
+                            android:text="Install"
+                            android:layout_toLeftOf="@+id/iv_video"
+                            android:layout_centerVertical="true" />
+
+                        <ImageView
+                            android:id="@+id/iv_video"
+                            android:padding="@dimen/_6sdp"
+                            android:layout_width="@dimen/_28sdp"
+                            android:layout_height="@dimen/_28sdp"
+                            android:layout_marginRight="@dimen/_10sdp"
+                            android:src="@drawable/ic_video"
+                            android:layout_alignParentRight="true"
+                            android:layout_centerVertical="true"
+                            android:layout_alignParentEnd="true"
+                            app:tint="@color/white" />
+                    </RelativeLayout>
+                </LinearLayout>
+            </FrameLayout>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>

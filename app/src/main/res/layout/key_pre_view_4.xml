@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TextView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:textSize="30sp"
+    android:textColor="@color/keyboard_text_color_4"
+    android:background="@color/key_background_press_4"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:textAlignment="center" />

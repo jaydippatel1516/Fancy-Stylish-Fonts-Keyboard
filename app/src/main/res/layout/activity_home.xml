@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="top|center_vertical|center_horizontal|center"
+            android:layout_gravity="top|center_vertical|center_horizontal|center"
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <com.jaydip.fancyfontskeyboard.slider.CarouselView
+                android:id="@+id/carouselView"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/_220sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                app:animateOnBoundary="true"
+                app:fillColor="@color/text_def"
+                app:indicatorMarginVertical="@dimen/_6sdp"
+                app:pageColor="#00000000"
+                app:radius="@dimen/_3sdp"
+                app:slideInterval="3000"
+                app:strokeColor="@color/dot_unselect"
+                app:strokeWidth="1dp" />
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/enableBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/enableIV"
+                    android:background="@drawable/blue_square_btn"
+                    android:src="@drawable/power"
+                    style="@style/HomeBtn" />
+
+                <TextView
+                    android:textColor="@color/white"
+                    android:id="@+id/enableTV"
+                    android:background="@drawable/blue_rtr_square_btn"
+                    android:text="Enable Keyboard"
+                    style="@style/HomeText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/defaultBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <ImageView
+                    android:id="@+id/defIV"
+                    android:background="@drawable/white_square_btn"
+                    android:src="@drawable/keyboard"
+                    app:tint="@color/text_def"
+                    style="@style/HomeBtn" />
+
+                <TextView
+                    android:textColor="@color/text_def"
+                    android:id="@+id/defTV"
+                    android:background="@drawable/white_rtr_square_btn"
+                    android:text="Set As Default"
+                    style="@style/HomeText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/fancyFontBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <ImageView
+                    android:background="@drawable/white_square_btn"
+                    android:src="@drawable/font"
+                    app:tint="@color/text_def"
+                    style="@style/HomeBtn" />
+
+                <TextView
+                    android:textColor="@color/text_def"
+                    android:background="@drawable/white_rtr_square_btn"
+                    android:text="Fancy Fonts Keyboard"
+                    style="@style/HomeText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/emojiBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <ImageView
+                    android:background="@drawable/white_square_btn"
+                    android:src="@drawable/emoji"
+                    app:tint="@color/text_def"
+                    style="@style/HomeBtn" />
+
+                <TextView
+                    android:textColor="@color/text_def"
+                    android:background="@drawable/white_rtr_square_btn"
+                    android:text="Emoji Keyboard"
+                    style="@style/HomeText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/themeBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <ImageView
+                    android:background="@drawable/white_square_btn"
+                    android:src="@drawable/theme"
+                    app:tint="@color/text_def"
+                    style="@style/HomeBtn" />
+
+                <TextView
+                    android:textColor="@color/text_def"
+                    android:background="@drawable/white_rtr_square_btn"
+                    android:text="Themes"
+                    style="@style/HomeText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/settingsBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <ImageView
+                    android:background="@drawable/white_square_btn"
+                    android:src="@drawable/setting"
+                    app:tint="@color/text_def"
+                    style="@style/HomeBtn" />
+
+                <TextView
+                    android:textColor="@color/text_def"
+                    android:background="@drawable/white_rtr_square_btn"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="Settings"
+                    style="@style/HomeText" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/howBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/_10sdp">
+
+                <ImageView
+                    android:background="@drawable/white_square_btn"
+                    android:src="@drawable/how_to_use"
+                    app:tint="@color/text_def"
+                    style="@style/HomeBtn" />
+
+                <TextView
+                    android:textColor="@color/text_def"
+                    android:background="@drawable/white_rtr_square_btn"
+                    android:layout_marginLeft="@dimen/_10sdp"
+                    android:text="How to use?"
+                    style="@style/HomeText" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

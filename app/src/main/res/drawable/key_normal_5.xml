@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt">
+    <item
+        android:left="2dp"
+        android:right="2dp">
+        <shape android:shape="rectangle">
+            <padding android:bottom="3.5dp" />
+            <padding android:top="3.5dp" />
+            <padding android:left="4dp" />
+            <padding android:right="4dp" />
+        </shape>
+    </item>
+    <item android:bottom="2dp">
+        <shape android:shape="rectangle">
+            <corners android:radius="5dp" />
+            <solid android:color="@color/key_background_normal_5" />
+        </shape>
+    </item>
+</layer-list>

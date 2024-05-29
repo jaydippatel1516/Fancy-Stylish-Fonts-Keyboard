@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/container_keyboard_linear_layout"
+        android:layout_width="match_parent"
+        android:layout_height="270dp">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:background="@color/keyboard_background_7"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <HorizontalScrollView
+                android:layout_gravity="center_vertical"
+                android:id="@+id/horizontal_scroll_view"
+                android:background="@color/keyboard_background_7"
+                android:scrollbars="none"
+                android:layout_width="match_parent"
+                android:layout_height="52dp">
+
+                <LinearLayout
+                    android:gravity="center_vertical"
+                    android:layout_gravity="center_vertical"
+                    android:orientation="horizontal"
+                    android:id="@+id/fonts_tabs_linear_layout"
+                    android:layout_width="wrap_content"
+                    android:layout_height="45dp"
+                    android:layout_margin="5dp" />
+            </HorizontalScrollView>
+
+            <com.jaydip.fancyfontskeyboard.util.FancyFontsKeyboardView
+                android:id="@+id/keyboard_view"
+                android:background="@color/keyboard_background_7"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="0dp"
+                android:layout_marginRight="0dp"
+                android:layout_marginBottom="4dp"
+                android:shadowRadius="0"
+                android:layout_alignParentBottom="true"
+                android:keyBackground="@drawable/key_background_7"
+                android:keyTextSize="22sp"
+                android:labelTextSize="18sp"
+                android:keyTextColor="@color/keyboard_text_color_7"
+                android:keyPreviewLayout="@layout/key_pre_view_7"
+                android:keyPreviewOffset="10dp"
+                android:popupLayout="@layout/keyboard_popup_layout" />
+        </LinearLayout>
+
+        <include layout="@layout/keyboard_menu_lay" />
+    </RelativeLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

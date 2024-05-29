@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <queries>
+        <intent>
+            <action android:name="com.applovin.am.intent.action.APPHUB_SERVICE" />
+        </intent>
+        <intent>
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="https" />
+        </intent>
+        <intent>
+            <action android:name="android.support.customtabs.action.CustomTabsService" />
+        </intent>
+
+        <package android:name="com.facebook.katana" />
+    </queries>
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+    <uses-permission android:name="com.applovin.array.apphub.permission.BIND_APPHUB_SERVICE" />
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+
+    <application
+        android:name="com.jaydip.fancyfontskeyboard.MyApp"
+        android:allowBackup="true"
+        android:hardwareAccelerated="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:largeHeap="true"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.FancyFontsKeyboard">
+        <activity
+            android:name="com.jaydip.fancyfontskeyboard.SplashActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="com.jaydip.fancyfontskeyboard.SettingsActivity"
+            android:exported="false"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.jaydip.fancyfontskeyboard.HomeActivity"
+            android:exported="true"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.jaydip.fancyfontskeyboard.FancyFontActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.jaydip.fancyfontskeyboard.SignMojiActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.jaydip.fancyfontskeyboard.ThemesActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.jaydip.fancyfontskeyboard.PrivacyActivity"
+            android:screenOrientation="nosensor" />
+        <activity
+            android:name="com.jaydip.fancyfontskeyboard.HowToUseActivity"
+            android:screenOrientation="nosensor" />
+
+        <service
+            android:name="com.jaydip.fancyfontskeyboard.service.FancyFontKeyboardService"
+            android:exported="false"
+            android:permission="android.permission.BIND_INPUT_METHOD">
+            <intent-filter>
+                <action android:name="android.view.InputMethod" />
+            </intent-filter>
+            <meta-data
+                android:name="android.view.im"
+                android:resource="@xml/method" />
+        </service>
+
+      \
+    </application>
+</manifest>

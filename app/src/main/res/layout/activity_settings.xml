@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/main_bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/top"
+        android:background="@color/top_bg"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_50sdp">
+
+        <ImageView
+            android:id="@+id/backIV"
+            android:padding="@dimen/_10sdp"
+            android:layout_width="@dimen/_50sdp"
+            android:layout_height="match_parent"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:textSize="@dimen/_15ssp"
+            android:textColor="@color/text_def"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Settings"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/top">
+
+        <LinearLayout
+            android:gravity="center"
+            android:layout_gravity="top|center_vertical|center_horizontal|center"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/_15sdp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/rateLay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:elevation="@dimen/_3sdp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="@dimen/_3sdp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/rate"
+                        app:tint="@color/text_def"
+                        style="@style/SettingsBtn" />
+
+                    <TextView
+                        android:textColor="@color/text_def"
+                        android:text="Rate Us"
+                        style="@style/SettingsText" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/shareLay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:elevation="@dimen/_3sdp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="@dimen/_3sdp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/share"
+                        app:tint="@color/text_def"
+                        style="@style/SettingsBtn" />
+
+                    <TextView
+                        android:textColor="@color/text_def"
+                        android:text="Share Us"
+                        style="@style/SettingsText" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/policyLay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/_8sdp"
+                android:elevation="@dimen/_3sdp"
+                app:cardBackgroundColor="@color/white"
+                app:cardCornerRadius="@dimen/_8sdp"
+                app:cardElevation="@dimen/_3sdp">
+
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:src="@drawable/privacy"
+                        app:tint="@color/text_def"
+                        style="@style/SettingsBtn" />
+
+                    <TextView
+                        android:textColor="@color/text_def"
+                        android:text="Privacy Policy"
+                        style="@style/SettingsText" />
+                </LinearLayout>
+            </androidx.cardview.widget.CardView>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>
